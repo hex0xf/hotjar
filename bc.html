@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>...</title>
+  <style lang="css">
+    html,
+    body {
+      background: #000;
+      color: #fff;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      font-family: arial, pingfang sc, microsoft yahei, wenquanyi micro hei, sans-serif
+    }
+
+    #b {
+      --time: .3s;
+      position: relative;
+      margin-bottom: 30px;
+      width: 100% !important;
+      background: #bebebe;
+      transition: var(--time)linear;
+      -o-transition: var(--time)linear;
+      -moz-transition: var(--time)linear;
+      -webkit-transition: var(--time)linear;
+      transition-property: background-color;
+      -o-transition-property: background-color;
+      -moz-transition-property: background-color;
+      -webkit-transition-property: background-color
+    }
+
+    #b::before {
+      display: block;
+      content: '';
+      width: 1%;
+      height: 6px;
+      background: #787878;
+      transition: var(--time)linear;
+      -o-transition: var(--time)linear;
+      -moz-transition: var(--time)linear;
+      -webkit-transition: var(--time)linear;
+      transition-property: width, background-color;
+      -o-transition-property: width, background-color;
+      -moz-transition-property: width, background-color;
+      -webkit-transition-property: width, background-color
+    }
+
+    #b.rt {
+      background: #45341b !important
+    }
+
+    #b.rt::before {
+      background: #e3ac59 !important
+    }
+
+    #b.fl {
+      background: #451b1b !important
+    }
+
+    #b.fl::before {
+      background: #e25959 !important
+    }
+
+    #b.t0 {
+      background: #33184d
+    }
+
+    #b.t0::before {
+      width: 3%;
+      background: #a74eff
+    }
+
+    #b.t1 {
+      background: #083a46
+    }
+
+    #b.t1::before {
+      width: 10%;
+      background: #19bee6
+    }
+
+    #b.ta {
+      background: #4d4900
+    }
+
+    #b.ta::before {
+      width: 25%;
+      background: #fff100
+    }
+
+    #b.tb {
+      background: #3d451c
+    }
+
+    #b.tb::before {
+      width: 50%;
+      background: #c8e35a
+    }
+
+    #b.tc {
+      background: #24451b
+    }
+
+    #b.tc::before {
+      width: 75%;
+      background: #74e259
+    }
+
+    #b.sc {
+      background: #1b452c
+    }
+
+    #b.sc::before {
+      width: 100%;
+      background: #59e390
+    }
+
+    #c {
+      display: none;
+      padding: 0 30px
+    }
+
+    #title {
+      color: #e25959;
+      font-size: 40px;
+      line-height: 50px
+    }
+
+    #line {
+      border-color: #e25959;
+      margin: 12px 0 28px
+    }
+
+    #text {
+      font-size: 20px;
+      line-height: 25px;
+      text-wrap: wrap;
+      margin: 0
+    }
+
+    #text li {
+      padding: 0 0 5px 15px
+    }
+
+    .flex {
+      display: flex;
+      font-weight: 700;
+      margin: 3px 0
+    }
+
+    .flex>* {
+      flex-grow: 1;
+      width: 50%
+    }
+
+    .flex>.t {
+      text-align: right;
+      margin-right: 10px
+    }
+
+    #url {
+      text-align: center;
+      font-weight: 700
+    }
+
+    #url a {
+      color: #e25959
+    }
+
+    #debug {
+      display: none;
+      margin: 30px;
+      padding: 20px;
+      border: 1px solid #e25959
+    }
+
+    #debug .t {
+      text-align: center;
+      font-weight: 700
+    }
+  </style>
+</head>
+
+<body>
+  <div id="b"></div>
+  <div id="c">
+    <div id="title">OOPS, SITE UNREACHABLE...</div>
+    <hr id="line">
+    </hr>
+    <div id="text">
+      <p>Please make sure your device is connected to mobile data or a Wi-Fi network.</p>
+      <p>If you need to connect to the internet, please refer to the following:<li>Check the Wi-Fi settings on your
+          phone to see if there is a Wi-Fi network you can connect to.</li>
+        <li>Check if your phone is connected to mobile data.</li>
+      </p>
+      <p>If you are connected to Wi-Fi:<li>Please check whether the Wi-Fi hotspot you're connected to has internet
+          access or if it permits
+          your device to access the internet.</li>
+      </p>
+    </div>
+    <div id="url"><span class="t">TRY </span><a class="v" href="#">THIS FALLBACK LINK</a> :'(</div>
+    <div id="tid" class="flex"><span class="t">Trace ID:</span><span class="v"></span></div>
+  </div>
+  <div id="debug">
+    <div class="t">DEBUG</div>
+    <ul class="c" id="d"></ul>
+  </div>
+  <!-- Hotjar Tracking Code for Site 5071979 (name missing) -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:5071979,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+</body>
+
+</html>
